@@ -18,4 +18,4 @@ def predict(data:dict):
 		return {"prediction": float(cached), "source": "cache"}
 	result = sum(features) * 0.42
 	cache.set(key, result)
-	return {"prediciton":result, "source":"computed"}
+	return {"prediction":result, "source":"computed"}
